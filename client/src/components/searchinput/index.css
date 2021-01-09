@@ -7,5 +7,11 @@ div {
 }
 
 .btnStyling {
+  margin-top: 10px;
   border: 0;
+}
+
+.wrapper {
+  margin-right: 20px;
+  margin-left: 20px;
 }

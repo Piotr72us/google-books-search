@@ -5,12 +5,12 @@ function searchInput() {
   return (
     <div className="wrapper">
       <Row>
-        <Col sm={10}>
+        <Col sm={12}>
           <h4 className="title">Book Search</h4>
           <h6 className="title">Search</h6>
           <InputGroup>
             <FormControl
-              placeholder="Harry Potter"
+              placeholder="Search"
               aria-label="search"
               aria-describedby="basic-addon1"
             />
