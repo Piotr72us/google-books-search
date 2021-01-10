@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import Jumbotron from "../../components/jumbotron";
 import Navbar from "../../components/navbar";
 import Search from "../../components/searchinput";
 import WrapperCard from "../../components/wrappercard";
 
-function SearchPage() {
-
+class SearchPage extends Component {
+render(){
   return (
     <>
       <Navbar />
@@ -13,7 +13,8 @@ function SearchPage() {
       <Search />
       <WrapperCard />
     </>
-  )
+  );
+}
 }
 
 export default SearchPage;

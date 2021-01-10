@@ -1,16 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import Jumbotron from "../../components/jumbotron";
 import Navbar from "../../components/navbar";
 
 
-function SearchPage() {
+class SearchPage extends Component {
 
+  render() {
   return (
     <>
       <Navbar />
       <Jumbotron />
     </>
-  )
+  );
+  }
 }
 
 export default SearchPage;
