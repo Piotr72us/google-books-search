@@ -1,0 +1,27 @@
+{
+  "name": "google-books-search",
+  "version": "1.0.0",
+  "description": "app for searching and saving books using google books API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Piotr72us/google-books-search.git"
+  },
+  "keywords": [
+    "books",
+    "search",
+    "react",
+    "api",
+    "google"
+  ],
+  "author": "peter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Piotr72us/google-books-search/issues"
+  },
+  "homepage": "https://github.com/Piotr72us/google-books-search#readme"
+}
