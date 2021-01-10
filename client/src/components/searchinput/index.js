@@ -1,7 +1,7 @@
 import { Row, Col, InputGroup, FormControl, Button } from "react-bootstrap";
 import "./index.css";
 
-function searchInput() {
+function searchInput({ handleInputChange, handleFormSubmit, q }) {
   return (
     <div className="wrapper">
       <Row>
@@ -10,12 +10,15 @@ function searchInput() {
           <h6 className="title">Search</h6>
           <InputGroup>
             <FormControl
+            value={q}
+            name="q"
+            onChange={handleInputChange}
               placeholder="Search"
               aria-label="search"
               aria-describedby="basic-addon1"
             />
           </InputGroup>
-          <Button className="btnStyling" variant="primary">Search</Button>
+          <Button onClick={handleFormSubmit} className="btnStyling" variant="primary">Search</Button>
         </Col>
       </Row>
     </div>
