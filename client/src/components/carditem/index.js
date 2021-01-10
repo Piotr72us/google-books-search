@@ -8,7 +8,7 @@ function CardItem() {
         <Col sm={10}>
 
           <h3 className="title padded">Harry Potter Bookshelf</h3>
-          <h4 className="author padded"> written by: Author</h4>
+          <h4 className="author padded"> written by: J. K. Rowling</h4>
         </Col>
         <Col sm={2}>  
         <Button className="btnEl" as="input" type="button" value="View" onClick={() => window.location.href="https://books.google.com/books?id=f280CwAAQBAJ&dq=harrypotter&hl=en&source=gbs_api"} />
