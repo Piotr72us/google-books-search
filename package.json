@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/Piotr72us/google-books-search/issues"
   },
-  "homepage": "https://github.com/Piotr72us/google-books-search#readme"
+  "homepage": "https://github.com/Piotr72us/google-books-search#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.11"
+  }
 }
