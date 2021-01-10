@@ -3,7 +3,7 @@ import Jumbotron from "../../components/jumbotron";
 import Navbar from "../../components/navbar";
 import Search from "../../components/searchinput";
 import WrapperCard from "../../components/wrappercard";
-import API from "../utils/API";
+import API from "../../utils/API";
 
 class SearchPage extends Component {
 
