@@ -13,11 +13,13 @@ function WrapperCard(props) {
             {props.books.map(book => (
               <CardItem
                 key={book.id}
+                // id={book.id}
                 title={book.volumeInfo.title}
                 authors={book.volumeInfo.authors}
                 description={book.volumeInfo.description}
                 image={book.volumeInfo.imageLinks.thumbnail}
                 link={book.volumeInfo.infoLink}
+                handleBookSave={props.handleBookSave}
               />
             ))
             }

@@ -13,7 +13,7 @@ function CardItem(props) {
           <a target="_blank" rel="noopener noreferrer" href={props.link}>
             <Button className="btnEl" as="input" type="button" value="View"/>
           </a>
-          <Button className="btnEl" as="input" type="button" value="Save" />
+          <Button className="btnEl" as="input" type="button" value="Save" onClick={() => props.handleBookSave()}/>
         </Col>
       </Row>
       <Row>
