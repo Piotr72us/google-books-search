@@ -1,26 +1,28 @@
-import { Card, Row, Col, Button } from "react-bootstrap";
+import { Card, Row, Col } from "react-bootstrap";
 import "./index.css";
 
-function CardItem(props) {
+function CardItem({ title, authors, link, description, image, Button }) {
   return (
     <Card>
       <Row>
         <Col sm={10}>
-          <h3 className="title padded">{props.title}</h3>
-          <h6 className="author padded"> written by: {props.authors}</h6>
+          <h3 className="title padded">{title}</h3>
+          <h6 className="author padded"> written by: {authors}</h6>
         </Col>
         <Col sm={2}>  
-          <a target="_blank" rel="noopener noreferrer" href={props.link}>
-            <Button className="btnEl" as="input" type="button" value="View"/>
+        <div className="centeredBtn">
+          <a className="btnElTwo" target="_blank" rel="noopener noreferrer" href={link}>View
+            {/* <Button className="btnEl" as="input" type="button" value="View"/> */}
           </a>
-          <Button className="btnEl" as="input" type="button" value="Save" onClick={() => props.handleBookSave()}/>
+          <Button />
+          </div>
         </Col>
       </Row>
       <Row>
         <Col sm={2}>
-          <img className="padded" alt="book" src={props.image}/>
+          <img className="padded" alt={title} src={image}/>
         </Col>
-        <Col className="title" sm={10}>{props.description}</Col>
+        <Col className="title" sm={10}>{description}</Col>
       </Row>
     </Card>
   )
