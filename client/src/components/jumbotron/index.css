@@ -1,3 +1,9 @@
 h1, h2 {
   text-align: center;
 }
+
+.jumbotron {
+  background-image: url("./jumbook.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
