@@ -10,9 +10,9 @@ function searchInput({ handleInputChange, handleFormSubmit, q }) {
           <h6 className="title">Search</h6>
           <InputGroup>
             <FormControl
-            value={q}
-            name="q"
-            onChange={handleInputChange}
+              value={q}
+              name="q"
+              onChange={handleInputChange}
               placeholder="Search"
               aria-label="search"
               aria-describedby="basic-addon1"

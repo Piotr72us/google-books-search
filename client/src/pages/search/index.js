@@ -24,8 +24,9 @@ class SearchPage extends Component {
     API.getBooks(this.state.q)
     .then(res =>
       this.setState({
-        books: res.data
+        books: res.data,
       })
+      .then(console.log(res.data))
       )
       .catch(() =>
       this.setState({
