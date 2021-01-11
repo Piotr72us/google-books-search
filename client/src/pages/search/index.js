@@ -40,6 +40,22 @@ class SearchPage extends Component {
     this.getBooks();
   }
 
+  handleBookSave = id => {
+    const book = this.state.books.find(book => book.id === id);
+
+    console.log("Book was saved!!!");
+
+    API.saveBook({
+      googleId: book.id,
+      title: book.volumeInfo.title,
+      link: book.volumeInfo.infoLink,
+      authors: book.volumeInfo.authors,
+      description: book.volumeInfo.description,
+      image: book.volumeInfo.imageLinks.thumbnail
+    }).then(() => this.getBooks());
+
+  };
+
 
   render() {
     return (
@@ -51,7 +67,10 @@ class SearchPage extends Component {
           handleFormSubmit={this.handleFormSubmit}
           q={this.state.q}
         />
-        <WrapperCard books={this.state.books} />
+        <WrapperCard 
+          books={this.state.books}
+          handleBookSave={this.handleBookSave}
+          />
       </>
     );
   }
