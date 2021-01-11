@@ -22,17 +22,16 @@ class SearchPage extends Component {
 
   getBooks = () => {
     API.getBooks(this.state.q)
-    .then(res =>
-      this.setState({
-        books: res.data,
-      })
-      .then(console.log(res.data))
+      .then(res =>
+        this.setState({
+          books: res.data
+        })
       )
       .catch(() =>
-      this.setState({
-        books: [],
-        message:"Nothing new found"
-      })
+        this.setState({
+          books: [],
+          message: "Nothing new found"
+        })
       );
   };
 
@@ -42,20 +41,20 @@ class SearchPage extends Component {
   }
 
 
-render(){
-  return (
-    <>
-      <Navbar />
-      <Jumbotron />
-      <Search 
-      handleInputChange={this.handleInputChange}
-      handleFormSubmit={this.handleFormSubmit}
-      q={this.state.q}
-      />
-      <WrapperCard books={this.state.books}/>
-    </>
-  );
-}
+  render() {
+    return (
+      <>
+        <Navbar />
+        <Jumbotron />
+        <Search
+          handleInputChange={this.handleInputChange}
+          handleFormSubmit={this.handleFormSubmit}
+          q={this.state.q}
+        />
+        <WrapperCard books={this.state.books} />
+      </>
+    );
+  }
 }
 
 export default SearchPage;
