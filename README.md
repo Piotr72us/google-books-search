@@ -15,6 +15,7 @@ For all book worms around - this is an app for you. Built in React.js, using bac
 
 ## Installation
 This app can be invoked in the terminal after downloading this GitHub repo. Open the repo folder and enter the command "npm start" or "yarn start". Or simply access the app from the Heroku page: 
+https://google-books-peter.herokuapp.com/
 
 
 ## Usage
