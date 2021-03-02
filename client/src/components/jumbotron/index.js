@@ -4,8 +4,8 @@ import "./index.css";
 function SectionTitle() {
   return (
     <Jumbotron>
-      <h1>(React) Google Book Search</h1>
-      <h2>Search for and Save Books of Interest</h2>
+      <h1>GOOGLE BOOK SEARCH</h1>
+      <h2>browse and save thousands of books</h2>
     </Jumbotron>
   )
 }

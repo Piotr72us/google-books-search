@@ -53,7 +53,7 @@ class SearchPage extends Component {
                 Button={() => (
                   <button
                     onClick={() => this.handleBookDelete(book._id)}
-                    className="btn ml-2 btnEl"
+                    className="btn btn-dark ml-2 btnEl"
                   >
                     Delete
                   </button>

@@ -10,11 +10,12 @@ function CardItem({ title, authors, link, description, image, Button }) {
           <h6 className="author padded"> written by: {authors}</h6>
         </Col>
         <Col sm={2}>  
-        <div className="centeredBtn">
-          <a className="btnElTwo" target="_blank" rel="noopener noreferrer" href={link}>View
+        <div className="adjustBtn">
+          <span><button className="btn btn-dark" target="_blank" rel="noopener noreferrer" href={link}>View
             {/* <Button className="btnEl" as="input" type="button" value="View"/> */}
-          </a>
+          </button>
           <Button />
+          </span>
           </div>
         </Col>
       </Row>

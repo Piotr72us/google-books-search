@@ -86,7 +86,7 @@ class SearchPage extends Component {
                       Button={() => (
                         <button
                           onClick={() => this.handleBookSave(book.id)}
-                          className="btn btn-primary btnEl"
+                          className="btn btn-dark ml-2 btnEl"
                         >
                           Save
                         </button>
