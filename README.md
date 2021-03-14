@@ -1,5 +1,5 @@
 
-# Google Books Search by Peter :book: 🏄
+<h1 align="center"> Google Books Search by Peter :book: 🏄 </h1>
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
@@ -19,7 +19,7 @@ https://google-books-peter.herokuapp.com/
 
 
 ## Usage
-Enter the book title in the search field and click the "Submit" button. Once the book is found, you can use the "View" button to see the book online or the "Save" button to save the book to your collection. On the page with your saved books you can also see the book online after clicking "View" or you can remove the book from your collection by clicking the "Delete" button.
+Enter the book title in the search field and click the "Search" button. Once the book is found, you can use the "View" button to see the book online or the "Save" button to save the book to your collection. On the page with your saved books you can also see the book online after clicking "View" or you can remove the book from your collection by clicking the "Delete" button.
 
 <p align="center">
   <img src="./client/public/img/screenshot-gbs.png">
