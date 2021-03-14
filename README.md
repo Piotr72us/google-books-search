@@ -1,5 +1,6 @@
 
-<h1 align="center"> Google Books Search by Peter :book: 🏄 </h1>
+<h1 align="center"> Google Books Search by Peter 📖 🏄 </h1>
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
