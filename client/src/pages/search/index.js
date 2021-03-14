@@ -71,35 +71,40 @@ class SearchPage extends Component {
         />
 
 
-        <WrapperCard 
-          > 
+        <WrapperCard
+        >
           {this.state.books.length ? (
             <div>
-                  {this.state.books.map(book => (
-                    <CardItem
-                      key={book.id}
-                      title={book.volumeInfo.title}
-                      link={book.volumeInfo.infoLink}
-                      authors={book.volumeInfo.authors}
-                      description={book.volumeInfo.description}
-                      image={book.volumeInfo.imageLinks.thumbnail}
-                      Button={() => (
-                        <button
-                          onClick={() => this.handleBookSave(book.id)}
-                          className="btn btn-dark ml-2 btnEl"
-                        >
-                          Save
-                        </button>
-                      )}
-                    />
-                  ))}
-          </div>) : (console.log("nothing"))
-          
-
+              {this.state.books.map(book => (
+                <CardItem
+                  key={book.id}
+                  title={book.volumeInfo.title}
+                  link={book.volumeInfo.infoLink}
+                  authors={book.volumeInfo.authors}
+                  description={book.volumeInfo.description}
+                  image={book.volumeInfo.imageLinks.thumbnail}
+                  Button={() => (
+                    <button
+                      onClick={(event) => {
+                        event.preventDefault();
+                        alert("The book has been saved to your collection!");
+                        this.handleBookSave(book.id)
                       }
+                      }
+                      className="btn btn-dark ml-2 btnEl"
+                    >
+                      Save
+                    </button>
+                  )}
+                />
+              ))}
+            </div>) : (console.log("nothing"))
 
 
-          </WrapperCard>
+          }
+
+
+        </WrapperCard>
       </>
     );
   }

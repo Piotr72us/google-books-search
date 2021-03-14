@@ -11,9 +11,9 @@ function CardItem({ title, authors, link, description, image, Button }) {
         </Col>
         <Col sm={2}>  
         <div className="adjustBtn">
-          <span><button className="btn btn-dark" target="_blank" rel="noopener noreferrer" href={link}>View
+          <span><a rel="noreferrer" target="_blank" href={link}><button className="btn btn-dark" >View
             {/* <Button className="btnEl" as="input" type="button" value="View"/> */}
-          </button>
+          </button></a>
           <Button />
           </span>
           </div>
